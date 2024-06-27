@@ -28,26 +28,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Set output directory on Linux
-        if: runner.os == 'Linux'
-        run: |
-          cd tests
-          echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
-
-      - name: Set output directory on Windows
-        if: runner.os == 'Windows'
-        run: |
-          cd tests
-          echo "dir=$(composer config cache-files-dir)" >> $env:GITHUB_OUTPUT
-        shell: pwsh
-
-      - name: Init Composer Cache # Docs: <https://git.io/JfAKn#php---composer>
-        uses: actions/cache@v4
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ matrix.php }}-${{ hashFiles('**/composer.json') }}
-          restore-keys: ${{ runner.os }}-composer-
-
       - name: Install Composer dependencies
         run: cd tests && composer update --prefer-dist --no-progress --ansi
 
