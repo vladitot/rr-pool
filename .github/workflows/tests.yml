@@ -30,11 +30,15 @@ jobs:
 
       - name: Set output directory on Linux
         if: runner.os == 'Linux'
-        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+        run: |
+          cd tests
+          echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
       - name: Set output directory on Windows
         if: runner.os == 'Windows'
-        run: echo "dir=$(composer config cache-files-dir)" >> $env:GITHUB_OUTPUT
+        run: |
+          cd tests
+          echo "dir=$(composer config cache-files-dir)" >> $env:GITHUB_OUTPUT
         shell: pwsh
 
       - name: Init Composer Cache # Docs: <https://git.io/JfAKn#php---composer>
