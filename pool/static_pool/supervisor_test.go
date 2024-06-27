@@ -425,7 +425,6 @@ func TestSupervisedPool_Idle(t *testing.T) {
 	}, make(chan struct{}))
 
 	assert.NoError(t, err)
-	time.Sleep(time.Second * 2)
 	require.Len(t, p.Workers(), 1)
 	// should be new worker with new pid
 	assert.NotEqual(t, pid, p.Workers()[0].Pid())
