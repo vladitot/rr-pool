@@ -1,4 +1,4 @@
-module github.com/roadrunner-server/pool
+module github.com/vladitot/rr-pool
 
 go 1.22.5
 
