@@ -11,10 +11,10 @@ import (
 	"github.com/roadrunner-server/errors"
 	"github.com/roadrunner-server/goridge/v3/pkg/relay"
 	"github.com/roadrunner-server/goridge/v3/pkg/socket"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/internal"
-	"github.com/roadrunner-server/pool/worker"
 	"github.com/shirou/gopsutil/process"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/internal"
+	"github.com/vladitot/rr-pool/worker"
 	"go.uber.org/zap"
 
 	"golang.org/x/sync/errgroup"

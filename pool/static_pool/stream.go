@@ -1,6 +1,6 @@
 package static_pool //nolint:stylecheck
 
-import "github.com/roadrunner-server/pool/payload"
+import "github.com/vladitot/rr-pool/payload"
 
 type PExec struct {
 	pld *payload.Payload

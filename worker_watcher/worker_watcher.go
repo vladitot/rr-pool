@@ -9,9 +9,9 @@ import (
 
 	"github.com/roadrunner-server/errors"
 	"github.com/roadrunner-server/events"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/worker"
-	"github.com/roadrunner-server/pool/worker_watcher/container/channel"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/worker"
+	"github.com/vladitot/rr-pool/worker_watcher/container/channel"
 	"go.uber.org/zap"
 )
 

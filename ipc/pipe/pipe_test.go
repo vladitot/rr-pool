@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/roadrunner-server/errors"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/payload"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/payload"
 	"go.uber.org/zap"
 )
 

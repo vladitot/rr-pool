@@ -6,8 +6,8 @@ import (
 
 	"github.com/roadrunner-server/events"
 	"github.com/roadrunner-server/goridge/v3/pkg/frame"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/payload"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/payload"
 	"go.uber.org/zap"
 )
 

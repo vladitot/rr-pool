@@ -13,12 +13,12 @@ import (
 	"unsafe"
 
 	"github.com/roadrunner-server/errors"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/ipc/pipe"
-	"github.com/roadrunner-server/pool/payload"
-	"github.com/roadrunner-server/pool/pool"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/ipc/pipe"
+	"github.com/vladitot/rr-pool/payload"
+	"github.com/vladitot/rr-pool/pool"
 	"go.uber.org/zap"
 )
 

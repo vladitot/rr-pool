@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/roadrunner-server/events"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/state/process"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/state/process"
 	"go.uber.org/zap"
 )
 

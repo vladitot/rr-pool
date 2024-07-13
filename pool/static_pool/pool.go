@@ -10,11 +10,11 @@ import (
 	"github.com/roadrunner-server/errors"
 	"github.com/roadrunner-server/events"
 	"github.com/roadrunner-server/goridge/v3/pkg/frame"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/payload"
-	"github.com/roadrunner-server/pool/pool"
-	"github.com/roadrunner-server/pool/worker"
-	workerWatcher "github.com/roadrunner-server/pool/worker_watcher"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/payload"
+	"github.com/vladitot/rr-pool/pool"
+	"github.com/vladitot/rr-pool/worker"
+	workerWatcher "github.com/vladitot/rr-pool/worker_watcher"
 	"go.uber.org/zap"
 )
 

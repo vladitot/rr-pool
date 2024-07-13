@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/roadrunner-server/pool/payload"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/vladitot/rr-pool/payload"
 	"go.uber.org/zap"
 )
 

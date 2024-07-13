@@ -2,8 +2,8 @@ package process
 
 import (
 	"github.com/roadrunner-server/errors"
-	"github.com/roadrunner-server/pool/worker"
 	"github.com/shirou/gopsutil/process"
+	"github.com/vladitot/rr-pool/worker"
 )
 
 // State provides information about specific worker.

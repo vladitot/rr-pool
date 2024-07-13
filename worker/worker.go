@@ -17,9 +17,9 @@ import (
 	"github.com/roadrunner-server/errors"
 	"github.com/roadrunner-server/goridge/v3/pkg/frame"
 	"github.com/roadrunner-server/goridge/v3/pkg/relay"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/internal"
-	"github.com/roadrunner-server/pool/payload"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/internal"
+	"github.com/vladitot/rr-pool/payload"
 	"go.uber.org/zap"
 )
 

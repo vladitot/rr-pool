@@ -5,9 +5,9 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/roadrunner-server/pool/ipc/pipe"
-	"github.com/roadrunner-server/pool/payload"
 	"github.com/stretchr/testify/assert"
+	"github.com/vladitot/rr-pool/ipc/pipe"
+	"github.com/vladitot/rr-pool/payload"
 )
 
 func FuzzStaticPoolEcho(f *testing.F) {

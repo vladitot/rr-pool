@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/roadrunner-server/errors"
-	"github.com/roadrunner-server/pool/fsm"
-	"github.com/roadrunner-server/pool/worker"
+	"github.com/vladitot/rr-pool/fsm"
+	"github.com/vladitot/rr-pool/worker"
 )
 
 type Vec struct {

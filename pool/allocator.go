@@ -7,7 +7,7 @@ import (
 
 	"github.com/roadrunner-server/errors"
 	"github.com/roadrunner-server/events"
-	"github.com/roadrunner-server/pool/worker"
+	"github.com/vladitot/rr-pool/worker"
 	"go.uber.org/zap"
 	"golang.org/x/sync/errgroup"
 )
