@@ -377,10 +377,10 @@ func (sp *Pool) Destroy(ctx context.Context) {
 	atomic.StoreUint64(&sp.queue, 0)
 }
 
-func (sp *Pool) Release(pid int) error {
+func (sp *Pool) Release(pid int64) error {
 	list := sp.ww.List()
 	for i, w := range list {
-		if int(w.Pid()) == pid {
+		if w.Pid() == pid {
 			sp.ww.Release(list[i])
 			return nil
 		}
