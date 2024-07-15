@@ -378,8 +378,21 @@ func (sp *Pool) Destroy(ctx context.Context) {
 }
 
 func (sp *Pool) Release(pid int64) error {
+	if sp.ww == nil {
+		sp.log.Info("worker watcher is nil")
+		return nil
+	}
+
 	list := sp.ww.List()
+	if list == nil {
+		sp.log.Info("worker list is nil")
+		return nil
+	}
+
 	for i, w := range list {
+		if w == nil {
+			continue // Пропускаем nil элементы, или можете добавить логирование
+		}
 		if w.Pid() == pid {
 			sp.ww.Release(list[i])
 			return nil
