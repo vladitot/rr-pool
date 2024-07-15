@@ -377,6 +377,17 @@ func (sp *Pool) Destroy(ctx context.Context) {
 	atomic.StoreUint64(&sp.queue, 0)
 }
 
+func (sp *Pool) Release(pid int64) error {
+	list := sp.ww.List()
+	for i, w := range list {
+		if w.Pid() == pid {
+			sp.ww.Release(list[i])
+			return nil
+		}
+	}
+	return errors.Str("worker not found")
+}
+
 func (sp *Pool) Reset(ctx context.Context) error {
 	// set timeout
 	ctx, cancel := context.WithTimeout(ctx, sp.cfg.ResetTimeout)
